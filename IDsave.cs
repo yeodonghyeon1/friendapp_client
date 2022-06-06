@@ -36,7 +36,7 @@ namespace tempclient
         public void IdSend()
         {
             string idpw = name + " " + password; 
-            mode = Encoding.Unicode.GetBytes("LOG"); data = Encoding.Unicode.GetBytes(idpw);
+            mode = Encoding.Unicode.GetBytes("NMS"); data = Encoding.Unicode.GetBytes(idpw);
             byte[] temp = new byte[mode.Length + data.Length];
             Array.Copy(mode, 0, temp, 0, mode.Length);//mode 0부터 mode.length 만큼 temp 0~ 에 저장
             Array.Copy(data, 0, temp, mode.Length, data.Length); //mode 0~length 만큼 temp 0~ 에 저장

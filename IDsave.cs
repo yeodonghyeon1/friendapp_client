@@ -8,7 +8,7 @@ using System.Net.Sockets;
 
 namespace tempclient
 {
-    internal class IDsave
+    internal class IDsave //아이디 관련 클래스
     {
 
         public string name = "";
